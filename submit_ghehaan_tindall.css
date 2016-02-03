@@ -13,10 +13,19 @@
 .item{
 	margin:3px;	
 }
+#navigation .open{
+		display:block;
+}
+#navigation .closed{
+	display:none;
+}
+	
 @media screen and (min-width: 1024px){	
 }
 
 @media screen and (max-width: 1024px) {	
+
+
 	.item .contracted{
 		background-image:url(images/plus.jpg);
 		background-position:right;
