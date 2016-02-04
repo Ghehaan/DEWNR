@@ -2,9 +2,17 @@
 
 function toggleItem(itemHeaderId,itemBodyId)
 {
+	toggleAccordian(itemHeaderId,itemBodyId);	
+	
+}
+
+
+
+function toggleAccordian(itemHeaderId,itemBodyId)
+{
 	var itemHeaderClassName = document.getElementById(itemHeaderId).className;
 	var itemBodyClassName = document.getElementById(itemBodyId).className;
-	
+		
 	if(itemHeaderClassName.indexOf("expanded")>=0)
 	{
 		itemHeaderClassName = itemHeaderClassName.replace("expanded", "contracted");

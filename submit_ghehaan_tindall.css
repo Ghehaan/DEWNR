@@ -3,6 +3,45 @@
 
 	
 @media screen and (min-width: 1024px){	
+	.itembody{
+		display:none;
+	}
+	.itemheader{
+		float:left;
+		width:100px;
+		border-top:#000 solid 1px;
+		border-left:#000 solid 1px;
+		border-bottom:#000 solid 1px;
+	}
+	.itembody{
+		position:absolute;
+	}
+	.item:nth-last-child(2) > .itemheader
+	{
+		border-right:#000 solid 1px;		
+	}
+	.item:last-child {
+		border-left:#ff0000 solid 1px;
+		border-bottom:#000 solid 1px;
+		padding-top:1px;
+	}
+	.expanded{
+/*		border-bottom:#fff solid 1px;*/
+	}
+	
+	.currentTab
+	{
+		border-bottom:#fff solid 1px;
+	}	
+	.leftover{
+		display:block;
+		border-bottom:#000 solid 1px;
+		
+	}
+	/*.open{
+		display:block;
+		padding-top:5px;
+	}*/
 }
 
 @media screen and (max-width: 1024px) {	
