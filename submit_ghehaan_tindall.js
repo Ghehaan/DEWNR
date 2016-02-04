@@ -15,7 +15,7 @@ function toggleTab(itemHeaderId,itemBodyId)
 	if(itemHeaderClassName.indexOf("currentTab")<0)
 	{
 		itemHeaderClassName = itemHeaderClassName + " currentTab";		
-		itemBodyClassName = itemBodyClassName + " openTab";				
+		itemBodyClassName = itemBodyClassName + " tabBody";				
 		for (i = 0; i < children.length; i++) { 
 			if(children[i].children.length>0)
 			{
@@ -25,7 +25,7 @@ function toggleTab(itemHeaderId,itemBodyId)
 				document.getElementById(itemId).className = itemClass;
 				
 				var bodyClass = children[i].children[1].className;
-				bodyClass = bodyClass.replace("openTab", "");
+				bodyClass = bodyClass.replace("tabBody", "");
 				var bodyId = children[i].children[1].id;
 				document.getElementById(bodyId).className = bodyClass;				
 			}
