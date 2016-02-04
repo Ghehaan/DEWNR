@@ -3,7 +3,8 @@
 
 	
 @media screen and (min-width: 1024px){	
-	.itembody{
+	.itembody{		
+		padding-top:5px;
 		display:none;
 	}
 	.itemheader{
@@ -38,10 +39,12 @@
 		border-bottom:#000 solid 1px;
 		
 	}
-	/*.open{
+	.openTab{
 		display:block;
-		padding-top:5px;
-	}*/
+	}
+	.closedTab{
+		display:none;
+	}
 }
 
 @media screen and (max-width: 1024px) {	
